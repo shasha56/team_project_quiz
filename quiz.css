@@ -1,0 +1,12 @@
+dialog {
+    display: none;
+}
+dialog[open] {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    size: 5%;
+}
