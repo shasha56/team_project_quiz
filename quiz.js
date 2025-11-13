@@ -97,6 +97,11 @@ const quiz = [
         question: '世界で一番大きかった国はどこでしょう？',
         answer: 'イギリス',
         option: ['元','ソ連','イギリス','ポルトガル']
+    },
+    {
+        question: 'アメリカで最もGDPが大きい州はどこでしょう？',
+        answer: 'カルフォルニア州',
+        option: ['ワシントン州','ニューヨーク州','カルフォニア州','テキサス州'] 
     }
 ];
 
@@ -140,7 +145,6 @@ function makeindex(){
 
 function start(){
     makeindex();
-    console.log(flag);
     document.getElementById('question').textContent = quiz[index].question;
     for(let i = 0; i < buttonLength; i++){
         button[i].textContent = quiz[index].option[i];
