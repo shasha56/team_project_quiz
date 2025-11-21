@@ -327,6 +327,6 @@ reset.addEventListener('click', (e) => {
 endButton.addEventListener('click', (e) => {
     count = 0;
     score = 0;
-    modal3.close();choiceButtons
+    modal3.close();
     quizModal.close();
 });
