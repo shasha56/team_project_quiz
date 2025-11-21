@@ -226,6 +226,9 @@ reset.addEventListener('click', (e) => {
     count = 0;
     score = 0;
     modal3.close();
+    for(let i = 0; i < quizLength; i++){
+        flag[i] = 1;
+    };
     start();
 })
 
