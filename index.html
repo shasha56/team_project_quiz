@@ -1,41 +1,60 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quiz</title>
-    <link rel="stylesheet" href="quiz.css"></link>
+  <title>4択クイズ</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="quiz.css"> <!--CSSの読み込み-->  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Hachi+Maru+Pop&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>クイズゲーム</h1>
-    <button id="start">スタート！</button>
+  <body>
+    <div class="header">
+      <h1>4択クイズ！</h1>
+    </div>
+    <button id="start" class="control">スタート！</button>
     <dialog id="quiz">
-        <h2 id="question"></h2>
-        <button class="option" id="button1">1</button>
-        <button class="option" id="button2">2</button>
-        <button class="option" id="button3">3</button>
-        <button class="option" id="button4">4</button>
+      <div class="choicesBox">
+      <p id="question"></p>
+      <div class="choices">
+        <button class ="choiceButtons" id="button1">選択肢1</button>
+      </div>
+      <div class="choices">
+        <button class ="choiceButtons" id="button2">選択肢2</button>
+      </div>
+    <br>
+      <div class="choices">
+        <button class ="choiceButtons" id="button3">選択肢3</button>
+      </div>
+      <div class="choices">
+        <button class ="choiceButtons" id="button4">選択肢4</button>
+      </div>
+    </div>
     </dialog>
 
     <dialog id="modal1">
         <h1>正解！</h1>
-        <button id="next1">次へ</button>
-        <button id="closeModal1">中断</button>
+        <p id="answer1"></p>
+        <p id="discription1"></p>
+        <button id="next1" class="control">次へ</button>
+        <button id="closeModal1" class="control">中断</button>
     </dialog>
 
     <dialog id="modal2">
         <h1>不正解！</h1>
-        <button id="next2">次へ</button>
-        <button id="closeModal2">中断</button>
+        <p id="answer2"></p>
+        <p id="discription2"></p>
+        <button id="next2" class="control">次へ</button>
+        <button id="closeModal2" class="control">中断</button>
     </dialog>
 
     <dialog id="modal3">
         <h1>お疲れ様でした！</h1>
         <h1 id="score"></h1>
-        <button id="end">ホーム</button>
-        <button id="reset">リトライ</button>
+        <button id="end" class="control">ホーム</button>
+        <button id="reset" class="control">リトライ</button>
     </dialog>
-    
-    <script src="quiz.js"></script>
+
+    <script src="quiz.js"></script> <!--jsの読み込み-->
 </body>
 </html>

@@ -1,14 +1,80 @@
+.hachi-maru-pop-regular {
+  font-family: "Hachi Maru Pop", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+    background-color:beige;
+    
+}
+
+h1{
+    text-align:center;
+    font-family:Hachi Maru Pop;
+    font-size:50px;
+}
+
+.header{
+    margin:0 auto;
+    padding:0 auto;
+    margin-left:calc(-50vw + 50%); /*画面いっぱい*/
+    width:100vw; /*画面いっぱい*/
+    height:100px;
+    background-color:rgb(206, 196, 131);
+    
+}
+
+.choicesBox{
+    width:80%;
+    background-color:rgb(143, 134, 81);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 2vh;
+    width: 90vw;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#question{
+    font-size: 2em;
+}
+
+.choices{
+    display: inline-block;
+    outline: dashed 1px black;
+    width:35vw;
+    height:19vh;
+    margin-top: 3vh;
+    margin:10 auto;
+}
+
+.choiceButtons{
+    font-size:180%;
+    width:100%;
+    height:100%;
+}
+
 dialog {
     display: none;
 }
+
 dialog[open] {
     display: block;
     width: 100%;
     height: 100%;
+    background-color:rgb(143, 134, 81);
 }
 
-button {
-    size: 8%;
-    margin: 2%;
+.control {
+    size: 20%;
+    margin: 7px;
     font-size: 1em;
+}
+
+p {
+    font-size: 20px;
 }
